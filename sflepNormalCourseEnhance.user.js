@@ -5,6 +5,7 @@
 // @description  解除30分钟无操作返回
 // @author       MisakaCloud
 // @match        https://welearn.sflep.com/student/StudyCourse.aspx*
+// @match        https://course.sflep.com/student/StudyCourse.aspx*
 // @grant        none
 // ==/UserScript==
 
