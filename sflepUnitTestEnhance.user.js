@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         随行课堂 Unit Test 增强
 // @namespace    http://tampermonkey.net/
-// @version      0.2.0
+// @version      0.2.1
 // @description  在单元测试中提供增强
 // @author       MisakaCloud
 // @match        https://*.sflep.com/2019/test/test.aspx*
