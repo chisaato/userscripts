@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  解除只能听一次的限制
 // @author       MisakaCloud
-// @match        https://welearn.sflep.com/2019/test/test.aspx*
+// @match        https://*.sflep.com/2019/test/test.aspx*
 // @grant        none
 // ==/UserScript==
 
@@ -143,6 +143,9 @@
             }
         });
     }
+    // 扬了不允许复制和选择
+    document.oncontextmenu = true
+    document.onselectstart = true
 
 
 })();
