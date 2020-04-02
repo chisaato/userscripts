@@ -140,8 +140,10 @@
             }
         });
     }
+    // 其他杂项
+    // 解除禁止选择禁止复制
     document.oncontextmenu = true
     document.onselectstart = true
-
-
+    // 不要翻译选项
+    $('.form-inline').find('option').addClass('notranslate')
 })();
