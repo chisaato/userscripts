@@ -1,23 +1,20 @@
 // ==UserScript==
 // @name         随行课堂 Unit Test 增强
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  解除只能听一次的限制
+// @version      0.2.0
+// @description  在单元测试中提供增强
 // @author       MisakaCloud
 // @match        https://*.sflep.com/2019/test/test.aspx*
+// @downloadURL  https://github.com/gzzchh/userscripts/raw/master/sflepUnitTestEnhance.user.js
 // @grant        none
 // ==/UserScript==
 
 (function () {
     'use strict';
 
-
-
     // 解除听力次数限制
-
     // 显示播放器 一些杂项
     $('#divSound').removeAttr("style");
-
     var _PlaySound = PlaySound
     window.PlaySound = function (src, id) {
         // var count = $('#hdPlay_' + id).val();
@@ -86,13 +83,13 @@
         $('#soundplayer').css('width', '350px').css('height', '0px')
     }
 
-
     // 停止计时器
     var _StartTimer = StartTimer
     window.StartTimer = function () {
 
     }
     clearInterval(timer)
+
     // 尝试显示进度条和控制
     var cSP = createSoundPlayer
     window.createSoundPlayer = function () {
@@ -143,7 +140,6 @@
             }
         });
     }
-    // 扬了不允许复制和选择
     document.oncontextmenu = true
     document.onselectstart = true
 

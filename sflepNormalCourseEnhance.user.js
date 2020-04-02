@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         随行课堂 普通课程增强
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  解除30分钟无操作返回
+// @version      0.2.0
+// @description  在普通课堂作业中提供一些增强功能
 // @author       MisakaCloud
 // @match        https://*.sflep.com/student/StudyCourse.aspx*
+// @downloadURL  https://github.com/gzzchh/userscripts/raw/master/sflepNormalCourseEnhance.user.js
 // @grant        none
 // ==/UserScript==
 
